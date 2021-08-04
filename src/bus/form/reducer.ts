@@ -9,8 +9,9 @@ declare global {
 }
 
 const initialState: IForm = {
-  text: '',
-  price: ''
+  name: '',
+  price: '',
+  content: ''
 }
 
 const formSlice = createSlice({
@@ -22,8 +23,9 @@ const formSlice = createSlice({
       state[type] = value;
     },
     clearForm(state) {
-      state.text = '';
+      state.name = '';
       state.price = '';
+      state.content = '';
     }
   }
 });

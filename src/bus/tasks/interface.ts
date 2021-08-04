@@ -1,10 +1,10 @@
 export interface ITask {
   id: string
-  text: string;
-  price: number
+  name: string;
+  price: number;
+  content?: string;
 }
 
 export interface IInitialStateTask {
   tasks: ITask[];
-  currentEditTaskId: string
 }
